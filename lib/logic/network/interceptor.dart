@@ -143,7 +143,9 @@ class ApiInterceptor extends Interceptor {
       case DioExceptionType.badCertificate:
         return '证书有误！';
       case DioExceptionType.badResponse:
-        return error.response?.statusCode == 302 ? '请输入短信验证码' : '服务器异常，请稍后重试！';
+        return error.response?.statusCode == 302
+            ? '检测到登录需要短信验证码，请点击右上角网页登录'
+            : '服务器异常，请稍后重试！';
       case DioExceptionType.cancel:
         return '请求已被取消，请重新请求';
       case DioExceptionType.connectionError:
