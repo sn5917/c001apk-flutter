@@ -281,6 +281,15 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.7.11"
+  desktop_webview_window:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: b107a03068b8c4249cec4a3b159d56f1326103c5
+      url: "https://github.com/Predidit/linux_webview_window.git"
+    source: git
+    version: "0.2.4"
   device_info_plus:
     dependency: "direct main"
     description:
